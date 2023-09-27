@@ -1,0 +1,29 @@
+.menu {
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  margin: 0.5rem;
+  padding: 2rem;
+  background-color: var(--cor-secundaria);
+}
+
+.menu__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80%;
+}
+
+.menu__options {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.item__link {
+  text-decoration: none;
+  font-weight: 500;
+}

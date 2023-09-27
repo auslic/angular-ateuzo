@@ -1,0 +1,66 @@
+.painel {
+  height: 90vh;
+}
+
+.painel__principal {
+  align-items: center;
+  background-image: url(../../../assets/bg-painel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  /* background-position-y: -10%; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.principal__text{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: relative;
+}
+
+.principal__title p{
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  line-height: 4.5rem;
+}
+
+.principal__subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--cor-secundaria);
+}
+
+.principal__img {
+  left: 7%;
+  position: relative;
+  width: 38%;
+}
+
+.painel__support {
+  padding: 1rem 3rem;
+}
+
+.cards__list {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card__item {
+  border: 1px solid rgb(63, 112, 123, 0.5);
+  border-radius: 4rem;
+  list-style-type: none;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.card__link {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  word-wrap: break-word;
+}
