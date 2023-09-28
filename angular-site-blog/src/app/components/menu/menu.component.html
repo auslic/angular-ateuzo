@@ -1,0 +1,55 @@
+<header class="menu">
+  <div class="menu__logo">
+    <a href="" class="logo">
+      {{logo}}
+    </a>
+  </div>
+  <div class="menu__options">
+
+    <!-- <ul class="options">
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+      <li class="options__item">
+        <a href="" class="item__link">
+
+        </a>
+      </li>
+    </ul> -->
+
+    <ul class="options">
+      <li  *ngFor="let item of optionsList" class="options__item">
+        <a href="" class="item__link">
+          {{ item }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,31 @@
+.painel {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: calc(100vh - 5.35rem);
+}
+
+.painel__text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: center;
+  margin-left: 8rem;
+}
+
+.text__title {
+  font-size: 1.7rem;
+  color: var(--white);
+}
+
+.text__subtitle {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.text__link {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+

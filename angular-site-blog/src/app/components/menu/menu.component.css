@@ -1,0 +1,34 @@
+.menu {
+  align-items: center;
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  margin: .5rem;
+  padding: 1.5rem;
+}
+
+.logo {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.options {
+  align-items: center;
+  display: flex;
+  gap: 2.8rem;
+  list-style-type: none;
+}
+
+.item__link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.options__item:nth-last-child(1) a{
+  background-color: black;
+  border-radius: 2.8rem;
+  color: var(--white);
+  padding: .8rem 1rem;
+}
+
+
