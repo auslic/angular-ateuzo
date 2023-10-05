@@ -1,12 +1,11 @@
-<ng-template [ngIf]="selectCardType()">
-  <div class="texto" *ngFor="let texto of contos">
-    <h1 class="title">
-      {{texto.titulo}}
-    </h1>
-    <p class="content" *ngFor="let textLine of texto.textoArray()">
-      {{textLine}}
-    </p>
-  </div>
-</ng-template>
+<div class="texto" *ngFor="let texto of selectPageType()">
+  <h1 class="title">
+    {{texto.titulo}}
+  </h1>
+  <p class="content" *ngFor="let textLine of texto.textoArray()">
+    {{textLine}}
+  </p>
+</div>
+
 
 

@@ -1,0 +1,13 @@
+.contact {
+  height: calc(100vh - 5.35rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--white);
+  font-size: 10rem;
+  font-weight: 700;
+  text-decoration: none;
+}

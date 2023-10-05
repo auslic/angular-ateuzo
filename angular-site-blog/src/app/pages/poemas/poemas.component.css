@@ -1,0 +1,8 @@
+.view {
+  padding: 2rem;
+}
+
+app-card {
+  display: flex;
+  gap: 2rem;
+}

@@ -52,7 +52,6 @@ export const contos = [
     `,
     textoArray(){
       let textoArray:string[] = this.conteudo.split("$")
-      console.log(textoArray)
       return textoArray
     },
     link: `https://www.instagram.com/entrenfims/`

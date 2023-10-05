@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-// import {poemas} from '../../data/poemas'
+import { Component, Input, OnInit } from '@angular/core';
+import {poemas} from '../../data/poemas'
 import {contos} from '../../data/contos'
-// import {inacabados} from '../../data/inacabados'
+import {inacabados} from '../../data/inacabados'
 
 @Component({
   selector: 'app-card',
@@ -13,20 +13,34 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.selectCardType)
-    console.log (this.cardType)
+    console.log (typeof(this.cardType))
+    console.log (this.pageType)
+    this.selectPageType()
   }
 
-  selectCardType(){
-    if (this.cardType == "contos"){
-      return true;
+  selectPageType(){
+    switch (this.pageType) {
+      case "contos":
+        this.cardType = contos
+        return this.cardType
+        break;
+      case "poemas":
+        this.cardType = poemas
+        return this.cardType
+        break;
+      case "inacabados":
+        this.cardType = inacabados
+        return this.cardType
+        break;
+      default:
+        return this.cardType
+        break;
     }
-
-    return false;
   }
 
-  cardType:string = ""
+  @Input()
+  pageType:string = ""
 
-  contos = contos
+  cardType = contos
 
 }

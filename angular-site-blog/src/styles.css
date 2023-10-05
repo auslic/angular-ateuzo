@@ -17,3 +17,7 @@
 
   font-family: var(--principal-font);
 }
+
+body {
+  background-color: var(--black);
+}
