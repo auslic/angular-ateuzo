@@ -2,16 +2,44 @@
   align-items: center;
   background-color: black;
   display: flex;
+  justify-content: center;
   height: calc(100vh - 5.35rem);
 }
 
+.painel__button_left {
+  position: absolute;
+  right: 75%;
+  padding: .6rem;
+  width: .6rem;
+  align-self: center;
+  border-radius: 1rem;
+  border: 1px solid white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.painel__button_right {
+  position: absolute;
+  left: 75%;
+  padding: .6rem;
+  width: .6rem;
+  align-self: center;
+  border-radius: 1rem;
+  border: 1px solid white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+}
+
 .painel__text {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   gap: .5rem;
   justify-content: center;
-  margin-left: 8rem;
 }
 
 .text__title {
@@ -22,10 +50,12 @@
 .text__subtitle {
   font-size: 1.1rem;
   color: var(--white);
+  text-align: left;
 }
 
 .text__link {
   font-size: 0.8rem;
   color: var(--white);
+  text-decoration: none;
 }
 

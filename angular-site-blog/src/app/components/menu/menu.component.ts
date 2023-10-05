@@ -7,21 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  logo:string = "@entrenfims"
-
-  optionsList:string[] = [
-    "News",
-    "Categories",
-    "Book Club Picks",
-    "Book Reviews",
-    "Write",
-    "Sign In",
-    "Get Started"
-  ]
-
   constructor() {
   }
 
   ngOnInit(): void {
   }
+
+  logo:string = "@entrenfims"
+
+  optionsId = [
+    {
+      name: "poemas",
+      id: "/poemas"
+    },
+    {
+      name: "contos",
+      id: "/contos"
+    },
+    {
+      name: "inacabados",
+      id: "/inacabados"
+    },
+    {
+      name: "fale comigo",
+      id: "/fale_comigo"
+    }
+  ]
 }

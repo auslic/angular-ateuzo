@@ -1,13 +1,18 @@
 <section class="painel">
+
+  <button class="painel__button_left" (click)="previousPoema()" [ngClass]="classPoemaLeft()"></button>
+
   <div class="painel__text">
     <h1 class="text__title">
-      {{titlePainel}}
+      {{poemas.at(poemaSelected)?.titulo}}
     </h1>
-    <p class="text__subtitle">
-      {{subtitlePainel}}
+    <p class="text__subtitle" *ngFor="let line of poemas.at(poemaSelected)?.textoArrayPoema()">
+      {{line}}
     </p>
-    <a href="" class="text__link">
+    <a [href]="this.poemas.at(poemaSelected)?.link" class="text__link">
       {{linkPainel}}
     </a>
   </div>
+
+  <button class="painel__button_right" (click)="nextPoema()" [ngClass]="classPoemaRight()"></button>
 </section>

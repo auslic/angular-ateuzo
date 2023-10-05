@@ -1,0 +1,9 @@
+.view {
+  padding: 2rem;
+  background-color: var(--black);
+}
+
+app-card {
+  display: flex;
+  gap: 2rem;
+}
